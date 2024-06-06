@@ -1,3 +1,12 @@
+apply from: "./dynatrace.gradle"
+buildscript {
+	apply from: "./plugin.gradle", to: buildscript
+
+	repositories {
+		mavenCentral()
+	}
+}
+
 allprojects {
     repositories {
         google()

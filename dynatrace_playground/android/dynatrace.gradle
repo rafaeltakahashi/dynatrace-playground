@@ -1,0 +1,18 @@
+ext['dynatrace.instrumentationFlavor'] = 'flutter'
+apply plugin: 'com.dynatrace.instrumentation'
+
+// AUTO - INSERTED
+dynatrace {
+      configurations {
+        defaultConfig {
+          autoStart{
+            applicationId 'fc826a2a-2218-4bcb-800c-f60db6358a9b'
+            beaconUrl 'https://bf15243sse.bf.dynatrace.com/mbeacon'
+          }
+          userOptIn true
+          agentBehavior.startupLoadBalancing true
+        }
+      }
+    }
+// AUTO - INSERTED
+  
